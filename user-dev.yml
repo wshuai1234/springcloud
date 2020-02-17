@@ -4,7 +4,7 @@ spring:
   application:
     name: microservice-user
   datasource:
-    url: jdbc:mysql://18.191.236.201:3306/springcloud?characterEncoding=UTF8
+    url: jdbc:mysql://18.191.236.201:3306/springcloud1?characterEncoding=UTF8
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: 123456
