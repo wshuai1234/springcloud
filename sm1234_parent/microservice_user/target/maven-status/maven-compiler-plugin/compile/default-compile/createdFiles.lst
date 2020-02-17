@@ -1,0 +1,5 @@
+cn\sm1234\user\dao\UserDao.class
+cn\sm1234\user\service\UserService.class
+cn\sm1234\user\pojo\User.class
+cn\sm1234\user\controller\UserController.class
+cn\sm1234\user\UserApplication.class

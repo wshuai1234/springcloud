@@ -1,0 +1,20 @@
+spring:
+  cloud:
+    config:
+      #uri: http://127.0.0.1:12000 #需要连接的spring cloud coinfig server
+      name: user  # prefix
+      profile: dev  #suffix
+      label: master #trunk #master
+      discovery:
+        enabled: true
+        service-id: microservice-config
+  rabbitmq:
+    host: 18.191.236.201
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://127.0.0.1:9003/eureka
+  instance:
+    prefer-ip-address: true

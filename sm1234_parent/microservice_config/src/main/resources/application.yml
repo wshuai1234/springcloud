@@ -1,0 +1,38 @@
+server:
+  port: 12000
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://127.0.0.1:9003/eureka
+  instance:
+    prefer-ip-address: true
+spring:
+  application:
+    name: microservice-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/wshuai1234/springcloud.git
+  rabbitmq:
+    host: 18.191.236.201
+management:   #暴露触发消息总线的地址
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
+          #spring:
+          #application:
+          #name: microservice-config
+          #profiles:
+          #active: subversion
+          #cloud:
+          #config:
+          #server:
+          #svn:
+          #uri: https://DESKTOP-U16JVFS/svn/springcloud/
+          #username: eric
+          #password: 123456
+        #default-label: trunk
