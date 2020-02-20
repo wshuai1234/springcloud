@@ -12,14 +12,14 @@ spring:
     show-sql: true
     generate-ddl: true
     database: mysql
-  zipkin:
-    base-url: http://127.0.0.1:9411
-    service:
-      name: microservice-user
-  sleuth:
-    enabled: true
-    sampler:
-      percentage: 1
+#   zipkin:
+#     base-url: http://127.0.0.1:9411
+#     service:
+#       name: microservice-user
+#   sleuth:
+#     enabled: true
+#     sampler:
+#       percentage: 1
 eureka:
   client:
     register-with-eureka: true #作为客户端 需要注册到eureka
